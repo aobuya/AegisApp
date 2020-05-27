@@ -70,7 +70,7 @@ public class SbReports extends AppCompatActivity {
         super.onStart();
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         // for customer__databaseReference.orderByChild("id").equalTo(uid).addValueEventListener(new ValueEventListener()
-        //for admin____
+        //for admin____gsgs
         databaseReference.orderByChild("id").equalTo(uid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
