@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MyReports">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lin1"
+            android:orientation="horizontal"
+            android:background="@drawable/card_shape"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:layout_height="@dimen/_60sdp"/>
+            
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/asap"
+                    android:id="@+id/txt_name"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Username" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect with us"
+            android:layout_below="@+id/lin1"
+            android:id="@+id/connect_text"
+           android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/asap"/>
+ <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+     android:layout_below="@+id/connect_text"
+            android:background="@drawable/card_shape"
+
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/lin2"
+                android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:text="100"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/rec_friend"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_height="wrap_content"/>
+
+                <View style="@style/Divider"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:id="@+id/call_center"
+                    android:text="Call contact Center"/>
+                <View style="@style/Divider"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:id="@+id/websites"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Visit our website"/>
+                <View style="@style/Divider"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:id="@+id/facebookln"
+                    android:text="Like us on Facebook"/>
+                <View style="@style/Divider"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+
+                    android:id="@+id/twitter"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Follow us on Twitter"/>
+                <View style="@style/Divider"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:id="@+id/image_rewards"
+                    android:text="Rewards"/>
+
+            </LinearLayout>
+ </RelativeLayout>
+ </RelativeLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/bar"
+            android:text="sign out"
+            android:fontFamily="@font/asap" />
+
+    </RelativeLayout>
+
+</FrameLayout>

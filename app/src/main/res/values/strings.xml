@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">AegisApp</string>
+
+    <string name="sb_number">SB Number</string>
+    <string name="button_report">Report</string>
+    <string name="minimum_password">Password cannot be less than 8</string>
+    <string name="have_account">Already have an account?</string>
+
+    <string name="auth_failed">Wrong email or Password</string>
+    <string name="report_list">View Reports</string>
+    <string name="customer_issue">SafeBoda Customer Issue</string>
+    <string name="rider_issue">SafeBoda Rider issue</string>
+    //spinner_items
+
+
+    <array name="status">
+        <item>Open</item>
+        <item>Closed</item>
+
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="dialog_title">Issue</string>
+    <string name="ok_label">OK</string>
+    <string name="dismiss_label">Dismiss</string>
+    <string name="clear_all_label">Clear all</string>
+    /
+    <string-array name="sb_issue">
+        <item>Two passengers</item>
+        <item>Non SB Helmet</item>
+        <item>Non SB Reflector</item>
+        <item>By-passing traffic</item>
+        <item>Removed number</item>
+        <item>Opposite direction</item>
+        <item>pavement</item>
+    </string-array>
+
+    <string-array name="customer_issue">
+        <item>No Issue</item>
+        <item>Non SB Helmet</item>
+        <item>Non SB Reflector</item>
+
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Aegis App</string>
+    <string name="nav_header_subtitle">aegis.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+</resources>

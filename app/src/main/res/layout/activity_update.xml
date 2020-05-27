@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".UpdateActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+
+            android:background="@drawable/card_background"
+            android:elevation="@dimen/_3sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_20sdp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/asap"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:text="Close Case"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Sb Number: "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/uNumber"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:text="1009"
+                        android:drawableTint="#FF4081"
+                        android:fontFamily="@font/asap"
+                        android:singleLine="true"
+                        android:inputType="number" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+
+                        android:text="Sb Issue: "
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Missing Gear"
+                        android:id="@+id/sb_note"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/asap"
+                        android:text="Customer Issue: "
+                        />
+                    <TextView
+                        android:id="@+id/c_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/asap"
+                        android:text="Cus Issue"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/asap"
+                    android:text="Status"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:text="case"
+                    android:background="@drawable/rect_shape"
+                    android:entries="@array/status"
+                    android:id="@+id/spinnerUp"/>
+
+
+                <Button
+                    android:id="@+id/button_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:background="@drawable/button_shape"
+                    android:text="Close"
+                    android:fontFamily="@font/asap"
+                    android:textColor="#FFFFFF"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/report_list"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:fontFamily="@font/asap"
+                    android:visibility="invisible"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/bike1"
+            android:elevation="4dp"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mine"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="My  Account" />
+
+    <item android:id="@+id/all_reports"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="Reports"/>
+    <item android:id="@+id/call_center"
+        android:icon="@drawable/ic_phone_black_24dp"
+        android:title="Report via Call"/>
+
+    <item android:id="@+id/help_line"
+        android:icon="@drawable/support_icon"
+        android:title="Help"/>
+
+</menu>

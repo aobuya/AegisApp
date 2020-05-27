@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:context=".MyReports">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            android:fontFamily="@font/asap"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/card_background"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/txtInput1"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="@dimen/_45sdp"
+                    app:errorEnabled="true"
+                    android:hint="Sb Number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:id="@+id/editText"
+                        android:inputType="number"
+                        android:fontFamily="@font/asap"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/asap"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_shape_one"
+                    android:textColor="#fff"
+                    android:text="@string/rider_issue"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/asap"
+                    android:text="No issue"
+                    android:id="@+id/sb_note"/>
+
+                //textview_location
+
+
+                <Button
+                    android:id="@+id/btView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/asap"
+                    android:textColor="#fff"
+                    android:background="@drawable/button_shape_one"
+                    android:text="@string/customer_issue" />
+                <TextView
+                    android:id="@+id/c_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/asap"
+                    android:text="No Issue"
+                    />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/asap"
+                    android:visibility="gone"
+                    android:text="TextView"
+                    />
+
+                <Button
+                    android:id="@+id/button_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/button_shape"
+                    android:text="@string/button_report"
+                    android:fontFamily="@font/asap"
+                    android:textColor="#FFFFFF"
+                    />
+                <TextView
+                    android:id="@+id/txtreports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report Riders and make a safe community"
+                    android:textStyle="italic"
+                    android:layout_marginTop="14dp"
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/asap"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/bike2"
+            android:elevation="4dp"
+            />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_message_black"/>
+
+</FrameLayout>
